@@ -1,32 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PakePlus App</title>
-        <script type="module" src="/main.js" defer></script>
-    </head>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>销售自助机WEB版</title>
 
-    <body>
-        <main class="container">
-            <h1>Welcome to PakePlus</h1>
-            <form class="row" id="greet-form">
-                <input id="inputValue" placeholder="Enter a something..." />
-            </form>
-            <div class="resultBox">
-                <span>result: </span>
-                <span id="result"></span>
-            </div>
-            <div class="invokeBox">
-                <button id="openUrl">open_url_browser</button>
-                <button id="openUrlNew">open_url_new</button>
-                <button id="runCommand">run_command</button>
-                <button id="downloadFile">download_file</button>
-                <button id="getExeDir">get_exe_dir</button>
-                <button id="getEnvVar">get_env_var</button>
-                <button id="findPort">find_port</button>
-            </div>
-        </main>
-    </body>
+		<link rel="stylesheet" href="css/public.css"/>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/banner.js"></script>
+		<script src="js/timer.js"></script>
+		<script src="js/public.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<div class="top">
+				<div class="title">
+					<span>一站式自助服务</span>
+				</div>
+				<div class="timer">
+					<div class="time-display">
+						<div class="time-numbers">
+							<span id="hours" class="time-unit">00</span>
+							<span>:</span>
+							<span id="minutes" class="time-unit">00</span>
+							<span>:</span>
+							<span id="seconds" class="time-unit">00</span>
+							<span id="period" class="time-period">上午</span>
+						</div>
+						<div id="date" class="date-display">2023年1月1日 星期一</div>
+					</div>
+				</div>
+				<div class="close">
+					<button class="closeBtn">X</button>
+				</div>
+			</div>
+			<div class="container">
+				<!-- 轮播图容器 -->
+				<div class="carousel-container" id="carousel">
+					<!-- 轮播图片区域 -->
+					<div class="carousel-slides" id="slides">
+						<div class="carousel-slide">
+							<img src="img/hy1.jpg" alt="1">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="img/hy2.jpg" alt="2">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="img/hy3.jpg" alt="3">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="img/hy4.jpg" alt="4">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="img/hy5.jpg" alt="5">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="img/hy6.jpg" alt="6">
+						</div>
+					</div>
+
+					<!-- 导航按钮 -->
+					<div class="carousel-prev" id="prevBtn">
+						<span style="font-size: 20px; font-weight: bold;">&lt;</span>
+					</div>
+					<div class="carousel-next" id="nextBtn">
+						<span style="font-size: 20px; font-weight: bold;">&gt;</span>
+					</div>
+
+					<!-- 指示器 -->
+					<div class="carousel-indicators" id="indicators"></div>
+				</div>
+			</div>
+			<div class="guide">
+				<img src="img/ld.png"/>
+				<span class="wate">欢迎使用,请点击按钮选择服务</span>
+			</div>
+			<div class="center">
+				<div class="identify">
+					<button class="identifyBtn" onclick="navigateTo('camera.html')">
+						<img class="identify-icon" src="img/车辆资料.png"/>
+						<span>车辆派遣单AI识别打印</span>
+					</button>
+				</div>
+				<div class="print">
+					<div class="number">
+						<button class="numberBtn">
+							<img class="number-icon" src="img/查询.png"/>
+							<span>输入车牌号打印</span>
+						</button>
+					</div>
+					<div class="report">
+						<button class="reportBtn">
+							<img class="report-icon" src="img/打印.png"/>
+							<span>出车化验单打印</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="logo">
+					<img src="img/logo.png"/>
+				</div>
+				<div class="text">
+					<div class="text1">
+						<span>河南汉永集团有限公司</span>
+					</div>
+					<div class="text2">
+						<span>设备编号:HNHY2025ZD01</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
