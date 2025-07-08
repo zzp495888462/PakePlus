@@ -1,0 +1,110 @@
+.top {
+	margin: 2.0rem;
+	display: grid;
+	grid-template-columns: 6fr 6fr;
+}
+
+.help{
+	width: 100%;
+}
+
+.help-div{
+	margin: 1.25rem;
+}
+
+.help-img{
+	max-width: 100%;
+	height: 28rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.guide{
+	margin: 1.25rem;
+	font-size: 2.0rem;
+	font-weight: bold;
+	color: #123B77;
+	padding-bottom: 1.25rem;
+}
+
+.chrome{
+	height: 30rem;
+	margin: 1.25rem;
+	background-color: #fff;
+}
+
+.operate{
+	display: flex;
+	padding: 1.25rem;
+}
+
+.camera {
+	width: 50%;
+	padding-right: 1rem;
+}
+
+.cameraBtn{
+	display: flex;
+	flex-direction: column;
+	/* 垂直排列 */
+	align-items: center;
+	/* 水平居中 */
+	justify-content: center;
+	/* 垂直居中 */
+	background-image: url("../img/green.png");
+	background-size: cover;
+	/* 覆盖整个按钮 */
+	background-position: center;
+	/* 居中显示 */
+	background-repeat: no-repeat;
+	/* 不平铺 */
+	color: #ffffff;
+	font-size: 2.5rem;
+	font-weight: bold;
+	border: 0ch;
+	height: 15rem;
+	width: 100%;
+	border-radius: 20px;
+	
+	.camera-icon {
+		width: 6rem;
+		height: 5rem;
+		padding-bottom: 0.625rem;
+	}
+}
+
+.return {
+	width: 50%;
+	padding-left: 1rem;
+}
+
+.returnBtn{
+	display: flex;
+	flex-direction: column;
+	/* 垂直排列 */
+	align-items: center;
+	/* 水平居中 */
+	justify-content: center;
+	/* 垂直居中 */
+	background-image: url("../img/orange.png");
+	background-size: cover;
+	/* 覆盖整个按钮 */
+	background-position: center;
+	/* 居中显示 */
+	background-repeat: no-repeat;
+	/* 不平铺 */
+	color: #ffffff;
+	font-size: 2.5rem;
+	font-weight: bold;
+	border: 0ch;
+	height: 15rem;
+	width: 100%;
+	border-radius: 20px;
+	
+	.return-icon {
+		width: 6rem;
+		height: 5rem;
+		padding-bottom: 0.625rem;
+	}
+}
