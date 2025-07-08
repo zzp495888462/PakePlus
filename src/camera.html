@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>高拍仪拍照识别</title>
+		<link rel="stylesheet" href="css/public.css"/>
+		<link rel="stylesheet" href="css/camera.css"/>
+		<script src="js/timer.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/camera/jquery.min.js"></script>
+		<script src="js/camera/wsconnect.js"></script>
+		<script src="js/camera/app.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<div class="top">
+				<div class="title">
+					<span>一站式自助服务</span>
+				</div>
+				<div class="timer">
+					<div class="time-display">
+						<div class="time-numbers">
+							<span id="hours" class="time-unit">00</span>
+							<span>:</span>
+							<span id="minutes" class="time-unit">00</span>
+							<span>:</span>
+							<span id="seconds" class="time-unit">00</span>
+							<span id="period" class="time-period">上午</span>
+						</div>
+						<div id="date" class="date-display">2023年1月1日 星期一</div>
+					</div>
+				</div>
+			</div>
+			<div class="help">
+				<div class="help-div">
+					<img class="help-img" src="img/help.png"/>
+				</div>	
+			</div>
+			<div class="guide">
+				<span>温馨提示：请等待画面平稳后再点击拍照识别</span>
+			</div>
+			<div class="chrome">
+				<!-- 摄像头 -->
+				<img class="chrome_img" alt=""/>
+			</div>
+			<div class="operate">
+				<div class="camera">
+					<button class="cameraBtn" onclick="navigateTo('print.html')">
+						<img class="camera-icon" src="img/拍照.png"/>
+						<span>拍照识别</span>
+					</button>
+				</div>
+				<div class="return">
+					<button class="returnBtn" onclick="navigateTo('index.html')">
+						<img class="return-icon" src="img/返回.png"/>
+						<span>返回</span>
+					</button>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="logo">
+					<img src="img/logo.png"/>
+				</div>
+				<div class="text">
+					<div class="text1">
+						<span>河南汉永集团有限公司</span>
+					</div>
+					<div class="text2">
+						<span>设备编号:HNHY2025ZD01</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
