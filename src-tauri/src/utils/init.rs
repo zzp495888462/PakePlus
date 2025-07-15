@@ -141,7 +141,7 @@ pub async fn resolve_setup(app: &mut App) -> Result<(), Error> {
             .unwrap();
     }
     // position
-    if config.center || (x == 0.0 && y == 0.0) {
+    if config.center || x <= 0.0 || y <= 0.0 {
         window.center().unwrap();
     } else {
         window
@@ -185,8 +185,6 @@ pub async fn resolve_setup(app: &mut App) -> Result<(), Error> {
             );
         } else if let WindowEvent::DragDrop(drag_drop) = event {
             println!("drag_drop: {:?}", drag_drop);
-        } else if let WindowEvent::Destroyed = event {
-            println!("window destroyed");
         }
     });
     window.show().unwrap();

@@ -8,6 +8,7 @@ import { join } from '@tauri-apps/api/path'
 import { ElMessage } from 'element-plus'
 import CryptoJS from 'crypto-js'
 import QRCode from 'qrcode'
+import Codes from '@/utils/codes'
 import { setTheme } from '@tauri-apps/api/app'
 
 // upstream repo info
@@ -1357,4 +1358,14 @@ export const syncAllBranch = async (
             }
         }
     }
+}
+
+// creat device uuid
+export const creatDeviceid = () => {
+    let deviceId = localStorage.getItem('deviceId')
+    if (!deviceId) {
+        deviceId = Date.now() + ''
+        localStorage.setItem('deviceId', deviceId)
+    }
+    return deviceId
 }
